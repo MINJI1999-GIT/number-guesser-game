@@ -22,7 +22,12 @@ def check_guess(secret_number, player_guess):
     4. If the guess is too low, return the string "low".
     """
     # Student 2: Add your code here
-    pass
+    if player_guess == secret_number:
+        return "Correct"
+    elif player_guess > secret_number:
+        return "Too high"
+    else:
+        return "Too low"
 
 def play_game():
     """
